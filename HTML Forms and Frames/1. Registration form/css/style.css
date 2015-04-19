@@ -1,0 +1,25 @@
+﻿body {
+    background-color: white;
+}
+
+table {
+    background: #fff;
+    border: 1px solid black;
+    empty-cells: hide;
+    border-collapse: collapse;
+}
+
+tfoot {
+    background-color: skyblue;
+}
+
+th {
+    border: 1px solid black;
+    height: 20px;
+    width: 150px;
+}
+
+td {
+    border: 1px solid black;
+    width: 248px;
+}

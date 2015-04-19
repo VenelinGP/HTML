@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    <title>1. Registration form</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <form name="registracion" metod="post" action="path/to/some/script.php">
+        <table>
+            <tfoot>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" name="Submit" />
+                        <input type="reset" name="Reset" value="Clean This Form" />
+                    </td>
+                </tr>
+            </tfoot>
+            <tr>
+                <th><label for="lastName">LastName</label></th>
+                <td><input type="text" id="lastName" name="LastName" required size="28" /></td>
+            </tr>
+            <tr>
+                <th><label for="firstName">FirstName</label></th>
+                <td><input type="text" id="firstName" name="FirstName" required size="28" /></td>
+            </tr>
+            <tr>
+                <th><label for="address">Address</label></th>
+                <td><textarea id="address" name="Address" required rows="3" cols="27"></textarea></td>
+            </tr>
+            <tr>
+                <th><label for="city">City</label></th>
+                <td>
+                    <input type="text" id="city" name="City" size="17"/>
+                    <label for="state" required>State</label>
+                    <input type="text" id="state" name="State" size="3"/>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="postCode">Zip/Postal Code</label></th>
+                <td><input type="text" id="postCode" name="Zip/Postal Code" required size="5" /></td>
+            </tr>
+            <tr>
+                <th><label for="country">Country</label></th>
+                <td>
+                    <select style="width: 148px">
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Turkey">Turkey</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="phone">Phone(country code, area code, number)</label></th>
+                <td>
+                    (+<input type="tel" id="phone" maxlength="3" size="3" name="countryCode" />)
+                    <input type="tel" maxlength="3" size="3" name="areaCode" />
+                    <input type="tel" maxlength="6" size="6" name="Phone" />
+                </td>
+            </tr>
+            <tr>
+                <th><label for="email">E-mail</label></th>
+                <td><input type="email" id="email" name="Email" required placeholder="Enter a valid email address" size="30" /></td>
+            </tr>
+            <tr>
+                <th><label for="birthDate">Birth Date</label></th>
+                <td><input type="text" id="birthDate" name="BirthDate" required placeholder="дд.мм.гггг г." /></td>
+            </tr>
+            <tr>
+                <th><label for="gender">Gender</label></th>
+                <td>
+                    <select>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="startingDate">Starting Date</label></th>
+                <td>
+                    <input type="radio" id="startingDate" name="StartingDate" value="Spring 2015" />Spring 2015
+                    <input type="radio" name="StartingDate" value="Summer 2015" />Summer 2015
+                </td>
+            </tr>
+            <tr>
+                <th><label for="comments">Comments/Questions</label></th>
+                <td><textarea id="comments" name="Comments" rows="5" cols="27"></textarea></td>
+            </tr>
+        </table>
+
+    </form>
+
+</body>
+</html>

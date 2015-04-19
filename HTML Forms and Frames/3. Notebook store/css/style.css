@@ -1,0 +1,65 @@
+﻿body {
+    font-family: 'Comic Sans MS';
+}
+
+fieldset {
+    border: 3px solid black;
+}
+
+legend {
+    font-size: 20px;
+    text-align: center;
+}
+
+strong {
+    font-size: 20px;
+    align-content: center;
+}
+
+input {
+    align-content: center;
+    width: 85%;
+}
+
+a:link {
+    color: #0AF;
+}
+
+a:visited {
+    color: #0AF;
+}
+
+table.bigTable {
+    border-spacing: 0px 2px;
+    border: 3px solid black;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+}
+
+    table.bigTable th {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 26px;
+        border-bottom: 3px solid black;
+    }
+
+    table.bigTable td {
+        padding: 8px;
+    }
+
+table.middleTable {
+    border: 3px solid black;
+    padding: 5px;
+}
+
+    table.middleTable td {
+        padding: 1px;
+    }
+
+table.product {
+    font-size: 20px;
+}
+
+    table.product tr:last-child td:first-child {
+        text-align: center;
+    }
